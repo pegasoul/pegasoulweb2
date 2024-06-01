@@ -264,6 +264,14 @@ ol {
   object-fit: cover;
 }
 
+.grid-img {
+  transition: filter 0.3s ease;
+}
+
+.grid-img:hover {
+  filter: brightness(80%);
+}
+
 /*events*/
 
 .events {
