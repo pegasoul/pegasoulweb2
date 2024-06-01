@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pegasoul</title>
+
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Link font-awesome-->
+    <script
+      src="https://kit.fontawesome.com/796aebcd1d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--style-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="/js/scrypt.js"></script>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <!--Navigation links-->
+      <div id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-black bg-blck">
+        <a class="navbar-brand" href="#navbar" id="abajo"
+          ><img
+            class="logo"
+            src="./img/logo.png"
+            alt="Logo Pegasoul"
+            height="25px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navlink4" href="#bio" id="abajo">Bio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="navlink1" href="#works" id="abajo"
+                >Work <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="navlink3" href="#events" id="abajo">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink5" href="#contact" id="abajo">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+    </header>
+
+    <!--main-->
+    <main class="main_index">
+      <!--imagen principal-->
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/bruja2.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/chicaflor2.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/noragami2.jpg" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--links de la bio-->
+      <section id="bio">
+        <div class="bio">
+          <img class="bio_img" src="./img/pegasoul_foto.png" width="250px" />
+          <p class="bio_text">
+            <b>Bel Rolón | Pegasoul</b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum
+            dolorem placeat modi unde, quidem officia aliquid dignissimos nam
+            assumenda, totam, necessitatibus iusto nesciunt. Exercitationem
+            adipisci optio unde sunt consequatur. Necessitatibus iusto nesciunt. Exercitationem
+            adipisci optio unde sunt consequatur.
+            <br /><br />
+            <a href="./docs/CV.txt" download class="download-link">
+              <img
+                class="cv"
+                src="./img/contact_img/cv.png"
+                alt="cv"
+                height="30px"
+            /></a>
+          </p>
+        </div>
+        <div class="cvwork"></div>
+      </section>
+      <!--Fin links de la bio-->
+
+      <!--Works-->
+      <div id="works">
+        <div class="works_img">
+          <div class="ilus">
+            <a href="./pages/ilustration.html" target="_blank"
+              ><img src="../img/work/ilus.png" alt="" height="350px"
+            /></a>
+          </div>
+          <div class="design">
+            <a href="./pages/design.html" target="_blank"
+              ><img src="../img/work/design.png" alt="" height="350px"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!--events-->
+      <div id="events">    
+      <div class="events">
+      <div class="div_events">
+        <h4>Events</h4>
+        <p class="div_events_title">
+          // Nothing at the moment //<br />Follow Pegasoul on
+          <a class="a_events" href="https://instagram.com/pegasoul"
+            >Instagram</a
+          >
+          for updates.
+        </p>
+        <img src="../img/pajarito.gif" alt="pajarito volando" width="200px" />
+      </div>
+    </div>
+    </div>
+
+      <!--contact-->
+      <div id="contact">
+      <div class="container_contacto">
+      <div class="contacto_links">
+        <ul class="ul_links">
+          <li class="li_img"><img src="../img/contact_img.png" width="200px" alt="pegasoul">
+</li>
+          <li class="li_link1">
+            <a href="https://wa.me/3364347231"
+          ><img class="whatsapp" src="../img/contact_img/whatsapp.png" alt="whastapp"
+        height="30px"/></a>
+          </li>
+          <li class="li_link2">
+            <a href="mailto:aquisudirecciondecorreo"
+          ><img class="mail" src="../img/contact_img/mail.png" alt="mail"
+        height="30px"/></a>
+          </li>
+      </div>
+
+      <div class="contacto">
+        <!--Formulario de contacto-->
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label"
+            >E-mail</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        
+        <div class="mb-4">
+          <label for="exampleFormControlInput2" class="form-label"
+            >Name</label
+          >
+          <input
+            type="Text"
+            class="form-control"
+            id="exampleFormControlInput2"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Tell me</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <button onclick="mensajeenviado()" type="submit" class="btn btn-sm btn-dark">Send</button>
+      </div>
+      </div>
+</div>
+    
+    <div class="redes_icons">
+      <div class="redes_icons_a">
+      <a href="https://instagram.com/pegasoul" 
+        ><i class="fa-brands fa-instagram fa-2x" style="color: rgb(0, 0, 0)"></i
+      ></a>
+      <a href="https://facebook.com/pegasoul"
+        ><i class="fa-brands fa-facebook fa-2x" style="color: rgb(0, 0, 0)"></i
+      ></a>
+      <a href="https://twitter.com/pegasoul"
+        ><i class="fa-brands fa-twitter fa-2x" style="color: rgb(0, 0, 0)"></i
+      ></a>
+      </ul>
+      </div>
+      </div>
+
+    </main>
+
+    <!--bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Footer-->
+    <footer>©Pegasoul by Bel Rolón | 2024</footer>
+    <script src="./js/scrypt.js"></script>
+  </body>
+</html>
