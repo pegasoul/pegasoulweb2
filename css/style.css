@@ -218,9 +218,18 @@ ol {
   justify-content: center;
 }
 
+.li_img {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
 .ul_links {
   display: list-item;
   place-items: center;
+}
+
+.li_link1 {
+  padding-left: 60px;
 }
 
 .li_link1,
@@ -234,7 +243,7 @@ ol {
   justify-self: center;
 }
 
-.contacto {
+.contact {
   font-size: small;
   width: 100%;
   padding-top: 2em;
@@ -331,7 +340,7 @@ footer {
   display: flex;
   margin: auto;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 100px;
   gap: 20px;
 }
 
