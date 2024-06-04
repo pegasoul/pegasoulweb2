@@ -1,51 +1,62 @@
+var lightbox = document.getElementById("lightbox");
+var lightboxImg = document.getElementById("lightbox-img");
+var closeBtn = document.getElementById("close");
+
+var images = []; // Array to store image URLs
+var currentIndex = 0;
+
 // Get all images in the grid
 var gridImages = document.querySelectorAll(".grid-img");
 
 // Add event listener to each image
-gridImages.forEach(function (image) {
+gridImages.forEach(function (image, index) {
   image.addEventListener("click", function () {
     var imgSrc = this.getAttribute("src");
     openLightbox(imgSrc);
+    currentIndex = images.indexOf(imgSrc);
+    currentIndex = index;
   });
+  images.push(image.getAttribute("src"));
 });
 
-// Open lightbox function
+// Function to open lightbox with a specific image
 function openLightbox(imgSrc) {
-  document.getElementById("lightbox-img").src = imgSrc;
-  document.getElementById("lightbox").style.display = "block";
+  lightboxImg.src = imgSrc;
+  lightbox.style.display = "block";
 }
 
-// Close lightbox function
+// Close the lightbox
 function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
+  lightbox.style.display = "none";
 }
+
+// Event listener to close lightbox when clicking outside the image
+document.body.addEventListener("click", function (event) {
+  if (event.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+// Event listener for clicking on the left side of the lightbox image
+lightboxImg.addEventListener("click", function (event) {
+  var mouseX = event.clientX;
+  var lightboxWidth = lightbox.offsetWidth;
+  if (mouseX < lightboxWidth / 2) {
+    // Clicked on the left side of the image
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = images.length - 1;
+    }
+  } else {
+    // Clicked on the right side of the image
+    if (currentIndex < images.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+  }
+  lightboxImg.src = images[currentIndex];
+});
 
 // Open lightbox with carousel
-
-var images = [
-  { src: "../img/dsg/tapa.jpg", alt: "Image 1" },
-  { src: "../img/dsg/2.jpg", alt: "Image 2" },
-  { src: "../img/dsg/puma.jpg", alt: "Image 3" },
-];
-
-function openLightboxWithCarousel(images) {
-  var carouselInner = document.getElementById("carousel-inner");
-  carouselInner.innerHTML = ""; // Clear previous carousel items
-
-  images.forEach(function (image, index) {
-    var carouselItem = document.createElement("div");
-    carouselItem.classList.add("carousel-item");
-    if (index === 0) {
-      carouselItem.classList.add("active");
-    }
-
-    var img = document.createElement("img");
-    img.src = image.src;
-    img.classList.add("d-block", "w-100");
-
-    carouselItem.appendChild(img);
-    carouselInner.appendChild(carouselItem);
-  });
-
-  $("#lightbox").modal("show"); // Open the lightbox modal using Bootstrap jQuery
-}

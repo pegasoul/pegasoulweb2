@@ -7,31 +7,21 @@ body {
   font-family: "Sono", sans-serif;
   width: 100%;
   justify-content: center;
-  background-image: url("../img/papel.jpg");
+  background-imag: url("../img/papel2.jpg");
+  background-color: antiquewhite;
   background-attachment: fixed;
 }
 
 .fa-instagram,
 .fa-facebook,
-.fa-twitter,
-.fa-youtube {
+.fa-twitter {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 .fa-instagram:hover,
 .fa-facebook:hover,
-.fa-twitter:hover,
-.fa-youtube:hover {
-  opacity: 0.5;
-}
-
-.logo {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-.logo:hover {
+.fa-twitter:hover {
   opacity: 0.7;
 }
 
@@ -47,7 +37,7 @@ a.special-link {
 }
 
 a.special-link:hover {
-  opacity: 0.5;
+  opacity: 0.7;
   text-decoration: none;
 }
 
@@ -90,35 +80,35 @@ a:hover {
   padding-left: 5%;
 }
 
-.navlink1,
-.navlink2,
-.navlink3,
-.navlink4,
-.navlink5,
 .li_link1,
 .li_link2,
 .li_link3 {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
-.navlinks_contact,
-.navlinks_work,
-.navlinks_events {
-  font-weight: bold;
+.li_link1:hover,
+.li_link2:hover,
+.li_link3:hover {
+  opacity: 0.7;
+}
+
+.navlink1,
+.navlink2,
+.navlink3,
+.navlink4,
+.navlink5 {
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  transition: font-weight 0.5s ease;
 }
 
 .navlink1:hover,
 .navlink2:hover,
 .navlink3:hover,
 .navlink4:hover,
-.navlink5:hover,
-.li_link1:hover,
-.li_link2:hover,
-.li_link3:hover {
-  opacity: 0.5;
+.navlink5:hover {
+  font-weight: bolder;
 }
 
 ul {
@@ -177,6 +167,15 @@ ol {
 
 /*Bio*/
 
+.cv {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.cv:hover {
+  opacity: 0.7;
+}
+
 .bio {
   width: 50%;
   display: flex;
@@ -206,6 +205,17 @@ ol {
 
 .carousel-inner {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  transition: opacity 1 0.9s ease;
 }
 
 /*Contact*/
@@ -255,6 +265,13 @@ ol {
 
 /*ilustración*/
 
+.ilus_titulo,
+.dg_titulo {
+  font-size: 90%;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -279,6 +296,19 @@ ol {
 
 .grid-img:hover {
   filter: brightness(80%);
+}
+
+.link_dg {
+  justify-content: center;
+}
+
+.linkdg1 {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.linkdg1:hover {
+  opacity: 0.7;
 }
 
 /*events*/
@@ -340,8 +370,14 @@ footer {
   display: flex;
   margin: auto;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
   gap: 20px;
+}
+
+.link_dg {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /*works*/
@@ -366,6 +402,21 @@ footer {
 .ilus:hover,
 .design:hover {
   opacity: 0.8;
+}
+
+.link_ilus {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.linkilus1 {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.linkilus1:hover {
+  opacity: 0.7;
 }
 
 /* Grid layout styles */
@@ -397,16 +448,6 @@ footer {
   max-height: 90%;
   margin-top: 50px;
   overflow: hidden;
-}
-
-.close-btn {
-  padding-top: 50px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: #fff;
-  font-size: 30px;
-  cursor: pointer;
 }
 
 /*responsive*/
