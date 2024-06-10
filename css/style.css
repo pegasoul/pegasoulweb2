@@ -57,6 +57,9 @@ a:hover {
   z-index: 9999;
 }
 
+.navbar-toggler {
+}
+
 .navbar-collapse {
   justify-content: right;
   padding-right: 10%;
@@ -177,11 +180,16 @@ ol {
 }
 
 .bio {
-  width: 50%;
   display: flex;
   padding-top: 200px;
   margin: auto;
   justify-content: center;
+}
+
+.bio_bio {
+  display: flex;
+  justify-content: center;
+  width: 700px;
 }
 
 .bio_text {
@@ -191,10 +199,6 @@ ol {
 .bio_text {
   padding-top: 2em;
   padding-left: 2em;
-}
-
-.main_index {
-  width: 100%;
 }
 
 .carouselExample {
@@ -216,6 +220,45 @@ ol {
 .carousel-control-next:hover {
   opacity: 1;
   transition: opacity 1 0.9s ease;
+}
+
+/*works*/
+
+.works {
+  display: flex;
+}
+
+.works_img {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.ilus,
+.design {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.ilus:hover,
+.design:hover {
+  opacity: 0.8;
+}
+
+.link_ilus {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.linkilus1 {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.linkilus1:hover {
+  opacity: 0.7;
 }
 
 /*Contact*/
@@ -378,45 +421,6 @@ footer {
   padding-top: 20px;
   display: flex;
   justify-content: center;
-}
-
-/*works*/
-
-.works {
-  display: flex;
-}
-
-.works_img {
-  display: flex;
-  gap: 100px;
-  justify-content: center;
-  padding-top: 150px;
-}
-
-.ilus,
-.design {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-.ilus:hover,
-.design:hover {
-  opacity: 0.8;
-}
-
-.link_ilus {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.linkilus1 {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-.linkilus1:hover {
-  opacity: 0.7;
 }
 
 /* Grid layout styles */
