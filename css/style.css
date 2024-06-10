@@ -454,9 +454,18 @@ footer {
   }
 
   .bio_text {
-    font-size: small;
+    padding-top: 100px;
+    font-size: large;
     width: 500px;
     text-align: center;
+  }
+
+  .cv {
+    transform: scale(110%);
+  }
+
+  .bio_img {
+    transform: scale(150%);
   }
 
   /*Work*/
