@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* body*/
+
 body {
   font-family: "Sono", sans-serif;
   width: 100%;
@@ -50,14 +52,13 @@ a:hover {
   font-weight: bold;
 }
 
+/*navbar*/
+
 .navbar {
   position: fixed;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 9999;
-}
-
-.navbar-toggler {
 }
 
 .navbar-collapse {
@@ -83,19 +84,6 @@ a:hover {
   padding-left: 5%;
 }
 
-.li_link1,
-.li_link2,
-.li_link3 {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-.li_link1:hover,
-.li_link2:hover,
-.li_link3:hover {
-  opacity: 0.7;
-}
-
 .navlink1,
 .navlink2,
 .navlink3,
@@ -103,7 +91,7 @@ a:hover {
 .navlink5 {
   color: rgb(0, 0, 0);
   font-weight: normal;
-  transition: font-weight 0.5s ease;
+  transition: font-weight 0.3s ease;
 }
 
 .navlink1:hover,
@@ -125,47 +113,6 @@ ul,
 ol {
   list-style-type: none;
   color: black;
-}
-
-.col_ilus,
-.col_textil,
-.col_figuras {
-  display: grid;
-  justify-content: center;
-}
-
-.sup_ilus,
-.sup_tex,
-.sup_fig {
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 1);
-  color: white;
-  font-weight: 300;
-  transition: visibility 1s, opacity 0.5s ease;
-}
-
-.col_ilus:hover .sup_ilus {
-  visibility: visible;
-  opacity: 0.5;
-}
-.col_textil:hover .sup_tex {
-  visibility: visible;
-  opacity: 0.5;
-}
-.col_figuras:hover .sup_fig {
-  visibility: visible;
-  opacity: 0.5;
-}
-
-.trabajos_title {
-  font-size: large;
-  font-weight: 600;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  text-align: center;
 }
 
 /*Bio*/
@@ -219,7 +166,7 @@ ol {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   opacity: 1;
-  transition: opacity 1 0.9s ease;
+  transition: opacity 0.9s ease;
 }
 
 /*works*/
@@ -290,6 +237,19 @@ ol {
 .li_link3 {
   text-decoration: none;
   padding-top: 10px;
+}
+
+.li_link1,
+.li_link2,
+.li_link3 {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.li_link1:hover,
+.li_link2:hover,
+.li_link3:hover {
+  opacity: 0.7;
 }
 
 .contacto_links {
@@ -455,3 +415,76 @@ footer {
 }
 
 /*responsive*/
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 1080px) {
+  /*Carrusel*/
+
+  .carouselExample {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .carousel-inner {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 0;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 1;
+    transition: opacity 0.9s ease;
+  }
+
+  /*Bio*/
+
+  .bio {
+    justify-content: center;
+  }
+
+  .bio_bio {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .bio_text {
+    font-size: small;
+    width: 500px;
+    text-align: center;
+  }
+
+  /*Work*/
+  .works {
+    display: grid;
+  }
+
+  .works_img {
+    display: grid;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 200px;
+  }
+
+  /*Events*/
+
+  .events {
+    padding-top: 350px;
+  }
+
+  /*Contact*/
+
+  .container_contacto {
+    padding-top: 300px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    justify-content: center;
+  }
+}
