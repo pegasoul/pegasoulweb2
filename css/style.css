@@ -417,7 +417,7 @@ footer {
 /*responsive*/
 
 /* Media query for tablets and smaller devices */
-@media (max-width: 1080px) {
+@media (max-width: 700px) {
   /*Carrusel*/
 
   .carouselExample {
