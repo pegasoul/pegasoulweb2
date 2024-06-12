@@ -59,4 +59,4 @@ lightboxImg.addEventListener("click", function (event) {
   lightboxImg.src = images[currentIndex];
 });
 
-// Open lightbox with carousel
+// carousel responsive

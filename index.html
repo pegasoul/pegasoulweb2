@@ -27,6 +27,7 @@
     <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
     <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,14 +45,14 @@
     <!--style-->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="/js/scrypt.js"></script>
+
   </head>
   <body>
     <!--header-->
     <header>
       <!--Navigation links-->
       <div id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-black bg-blck">
+      <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#navbar" id="abajo"
           ><img
             class="logo"
@@ -94,8 +95,8 @@
 
     <!--main-->
     <main class="main_index">
-      <!--imagen principal-->
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <!--carouselPC-->
+      <div id="carouselPC" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="./img/carrusel/pc/bruja2.jpg" alt="..." />
@@ -110,7 +111,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselPC"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -119,7 +120,39 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselPC"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--carouselMobile-->
+      <div id="carouselMobile" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/carrusel/movil/bruja_resp.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/carrusel/movil/chicaflor_resp.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/carrusel/movil/siestita_resp.jpg" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselMobile"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselMobile"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -133,20 +166,16 @@
           <div class="bio_bio">
           <img class="bio_img" src="./img/pegasoul_foto.png" width="250px" />
           <p class="bio_text">
-            <b>Bel Rolón | Pegasoul</b>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum
-            dolorem placeat modi unde, quidem officia aliquid dignissimos nam
-            assumenda, totam, necessitatibus iusto nesciunt. Exercitationem
-            adipisci optio unde sunt consequatur. Necessitatibus iusto nesciunt. Exercitationem
-            adipisci optio unde sunt consequatur.
-            <br /><br />
-            <a href="./docs/CV.txt" download class="download-link">
+            <b>Bel Rolón | Pegasoul</b><br>
+            Hi, there. I'm Bel, an art teacher and illustrator from San Nicolás de los Arroyos, Argentina, currently working towards becoming a graphic designer and front-end developer.<br>Art is a subject that has always held a significant place in my life. Since my childhood, drawing has been my favorite and most cherished hobby. I'm happy I've kept it to the present day, and I hope it remains with me until the very end. <br>In the meantime, I've created this website for all of you who are curious about my work. Thank you so much for stopping by.☆ <br>
+
+            <!-- <a href="./docs/CV.txt" download class="download-link">
               <img
                 class="cv"
                 src="./img/contact_img/cv.png"
                 alt="cv"
                 height="30px"
-            /></a>
+            /></a> -->
           </p>
           </div>
         </div>
@@ -174,15 +203,16 @@
       <div id="events">    
       <div class="events">
       <div class="div_events">
-        <h4>Events</h4>
+        <h4 class="events_title">Events</h4>
         <p class="div_events_title">
-          // Nothing at the moment //<br />Follow Pegasoul on
+          // Nothing at the moment //</p>
+          <p class="div_events_title_ig">Follow Pegasoul on
           <a class="a_events" href="https://instagram.com/pegasoul"
             >Instagram</a
           >
           for updates.
         </p>
-        <img src="./img/pajarito.gif" alt="pajarito volando" width="200px" />
+        <img src="./img/pajarito.gif" class="events_img" alt="pajarito volando" width="250px" />
       </div>
     </div>
     </div>
@@ -228,5 +258,27 @@
     <!--Footer-->
     <footer>©Pegasoul by Bel Rolón | 2024</footer>
     <script src="./js/scrypt.js"></script>
+
+      <script>
+    $(document).ready(function() {
+      function checkScreenSize() {
+        if ($(window).width() >= 700) {
+          $('#carouselPC').show();
+          $('#carouselMobile').hide();
+        } else {
+          $('#carouselPC').hide();
+          $('#carouselMobile').show();
+        }
+      }
+
+      // Check screen size on initial load
+      checkScreenSize();
+
+      // Check screen size on window resize
+      $(window).resize(function() {
+        checkScreenSize();
+      });
+    });
+  </script>
   </body>
 </html>
