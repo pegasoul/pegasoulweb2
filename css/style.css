@@ -418,7 +418,7 @@ footer {
 /*responsive*/
 
 /* Media query for cellphones */
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   /*navbar*/
   .navbar-toggler-icon {
     background-image: url("../img/toggler.png");
