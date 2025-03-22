@@ -546,6 +546,13 @@ footer {
     justify-items: center;
   }
 
+  .bio_img {
+   width: 50%;
+   height: auto;
+   max-width:100%;
+   object-fit: cover;
+  }
+
   .bio_text {
     padding-top: 20px;
     font-size: normal;
