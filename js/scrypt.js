@@ -36,7 +36,7 @@ document.body.addEventListener("click", function (event) {
     closeLightbox();
   }
 });
-
+ñ
 // Event listener for clicking on the left side of the lightbox image
 lightboxImg.addEventListener("click", function (event) {
   var mouseX = event.clientX;
