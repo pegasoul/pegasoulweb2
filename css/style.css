@@ -9,8 +9,8 @@ body {
   font-family: "Sono", sans-serif;
   width: 100%;
   justify-content: center;
-  background-imag: url("../img/papel2.jpg");
-  background-color: antiquewhite;
+  /*background-image: url("../img/papel2.jpg");*/
+  background-color: whitesmoke;
   background-attachment: fixed;
 }
 
@@ -56,7 +56,7 @@ a:hover {
 
 .navbar {
   position: fixed;
-  background-color: hsl(34, 78%, 91%);
+  background-color: whitesmoke;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 9999;
