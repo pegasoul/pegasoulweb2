@@ -16,14 +16,14 @@ body {
 
 .fa-instagram,
 .fa-behance,
-.fa-linkedin {
+.fa-spotify {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 .fa-instagram:hover,
 .fa-behance:hover,
-.fa-linkedin:hover {
+.fa-spotify:hover {
   opacity: 0.7;
 }
 
@@ -135,7 +135,7 @@ ol {
 
 .bio {
   display: flex;
-  padding-top: 180px;
+  padding-top: 200px;
   margin: auto;
   justify-content: center;
 }
@@ -230,7 +230,10 @@ ol {
   transform: scale(98%);
 }
 
-.div_link1,
+.div_link1 {
+  padding-top: 50px;
+}
+
 .div_link2 {
   padding-top: 10px;
 }
