@@ -623,17 +623,13 @@ footer {
   }
 
   .div_link2 {
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 100px; }
 
   .mariposa {
     scale: 150%;
   }
 
-  .div_link1,
-  .div_link2 {
-  scale: 120%;
-  }
 
   /*works*/
 
