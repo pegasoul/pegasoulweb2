@@ -417,8 +417,8 @@ footer {
 
 /*responsive*/
 
-/* Media query for cellphones */
-@media (max-width: 500px) {
+/* Media query for cellphones*/
+@media (max-width: 600px) {
   /*navbar*/
   .navbar-toggler-icon {
     background-image: url("../img/toggler.png");
@@ -530,14 +530,24 @@ footer {
   }
 }
 
+/* Media query for medium screens */
+
+@media (min-width: 600px) and (max-width: 1400px) {
+.bio_img {
+  padding-top: 20px;
+  height: auto;
+  object-fit:contain;
+}
+}
+
 /* Media query for bigger screens */
 @media (min-width: 1400px) {
   /*Bio*/
 
   .bio {
     justify-content: center;
-    padding-top: 250px;
-    padding-bottom: 30px;
+    padding-top: 280px;
+    padding-bottom: 280px;
   }
 
   .bio_bio {
@@ -547,10 +557,11 @@ footer {
   }
 
   .bio_img {
-   width: 50%;
+   width: 40%;
    height: auto;
    max-width:100%;
-   object-fit: cover;
+   object-fit:contain;
+   padding-top: 15px;
   }
 
   .bio_text {
@@ -567,9 +578,11 @@ footer {
 
   .works_img {
     display: flex;
+    scale: 125%;
     gap: 100px;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 280px;
+    padding-bottom: 280px;
   }
 
   /*Events*/
@@ -605,9 +618,21 @@ footer {
     justify-content: center;
   }
 
+  .div_link1 {
+    padding-top: 100px;
+  }
+
+  .div_link2 {
+    padding-top: 40px;
+    padding-bottom: 100px; }
+
+  .mariposa {
+    scale: 150%;
+  }
+
   .div_link1,
   .div_link2 {
-    padding-top: 20px;
+  scale: 120%;
   }
 
   /*works*/
