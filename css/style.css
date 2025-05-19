@@ -9,9 +9,9 @@ body {
   font-family: "Sono", sans-serif;
   width: 100%;
   justify-content: center;
-  /*background-image: url("../img/papel2.jpg");*/
+  background-image: url("../img/bg.png");
+  background-size: cover;
   background-color: whitesmoke;
-  background-attachment: fixed;
 }
 
 .fa-instagram,
@@ -422,6 +422,11 @@ footer {
   /*navbar*/
   .navbar-toggler-icon {
     background-image: url("../img/toggler.png");
+  }
+
+  body {
+    background-image: url("../img/bgcel.png");
+    background-size: cover;
   }
 
   /*Carrusel*/
