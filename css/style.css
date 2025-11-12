@@ -185,19 +185,21 @@ ol {
 
 .works_img {
   display: flex;
-  gap: 100px;
+  gap: 40px;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 190px;
 }
 
 .ilus,
-.design {
+.design,
+.textil {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 .ilus:hover,
-.design:hover {
+.design:hover,
+.textil:hover {
   opacity: 0.8;
 }
 
@@ -210,6 +212,7 @@ ol {
 .linkilus1 {
   opacity: 1;
   transition: opacity 0.5s ease;
+  padding-right: 10px;
 }
 
 .linkilus1:hover {
@@ -290,11 +293,25 @@ ol {
   object-fit: cover;
 }
 
+.grid-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .grid-img {
   transition: filter 0.3s ease;
 }
 
 .grid-img:hover {
+  filter: brightness(80%);
+}
+
+.grid-video {
+  transition: filter 0.3s ease;
+}
+
+.grid-video:hover {
   filter: brightness(80%);
 }
 
@@ -305,6 +322,7 @@ ol {
 .linkdg1 {
   opacity: 1;
   transition: opacity 0.5s ease;
+  padding-left: 10px;
 }
 
 .linkdg1:hover {
@@ -386,6 +404,12 @@ footer {
 /* Grid layout styles */
 
 .grid-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.grid-video {
   width: 100%;
   height: auto;
   cursor: pointer;
@@ -481,7 +505,7 @@ footer {
 
   .works_img {
     display: grid;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     padding-top: 50px;
     transform: scale(70%);
