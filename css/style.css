@@ -356,14 +356,7 @@ ol {
   font-size: small;
 }
 
-/*espacios*/
 
-.espacio_ilus,
-.espacio_textil,
-.espacio_figuras {
-  height: 30px;
-  border-bottom: 1px dotted black;
-}
 
 /*eventos*/
 .a_eventos {
