@@ -185,7 +185,7 @@ ol {
 
 .works_img {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
   padding-top: 190px;
 }
@@ -498,7 +498,7 @@ footer {
 
   .works_img {
     display: grid;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
     padding-top: 50px;
     transform: scale(70%);
@@ -563,7 +563,7 @@ footer {
 }
 
 /* Media query for bigger screens */
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   /*Bio*/
 
   .bio {
@@ -600,10 +600,10 @@ footer {
 
   .works_img {
     display: flex;
-    scale: 125%;
-    gap: 100px;
+    scale: 100%;
+    gap: 80px;
     justify-content: center;
-    padding-top: 280px;
+    padding-top: 320px;
     padding-bottom: 280px;
   }
 
