@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 /* body*/
 
 body {
@@ -120,6 +121,77 @@ ul,
 ol {
   list-style-type: none;
   color: black;
+}
+
+/*nav_eventos*/
+
+.navbar2 {
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.navbar:hover {
+  opacity: 0.9;
+}
+
+.navbar-collapse {
+  justify-content: right;
+  padding-right: 10%;
+}
+
+.navbar-expand-lg {
+  padding-right: 10px;
+}
+
+.nav-item {
+  padding-inline: 10%;
+}
+
+.navbar-brand {
+  padding-left: 5%;
+}
+
+.navbar-toggler:focus,
+.navar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navlink1,
+.navlink2,
+.navlink3,
+.navlink4,
+.navlink5 {
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  transition: font-weight 0.3s ease;
+}
+
+.navlink1:hover,
+.navlink2:hover,
+.navlink3:hover,
+.navlink4:hover,
+.navlink5:hover {
+  font-weight: bolder;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  text-align: none;
+  font-size: small;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  color: black;
+}
+
+.event_titulo {
+  font-size: 90%;
+  padding-left: 20px;
+  padding-top: 2px;
 }
 
 /*Bio*/
@@ -282,18 +354,19 @@ ol {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .grid-item {
   aspect-ratio: 1;
   overflow: hidden;
 }
 
 .grid-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.grid-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -307,11 +380,24 @@ ol {
   filter: brightness(80%);
 }
 
-.grid-video {
+/*grid de eventos*/
+
+.grid-item2 {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.grid-item2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-img2 {
   transition: filter 0.3s ease;
 }
 
-.grid-video:hover {
+.grid-img2:hover {
   filter: brightness(80%);
 }
 
@@ -359,16 +445,33 @@ ol {
 
 
 /*eventos*/
-.a_eventos {
-  text-decoration: none;
+.eventos_posts {
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
 }
 
-.esoestodo {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  display: flex;
+/*links home en eventos*/
+
+.link_home {
   justify-content: center;
 }
+
+.linkhome {
+  display: flex;
+  padding-top: 30px;
+}
+
+.linkhome1 {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  padding-left: 10px;
+}
+
+.linkhome1:hover {
+  opacity: 0.7;
+}
+
 
 /*Footer*/
 footer {
