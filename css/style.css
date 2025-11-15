@@ -264,14 +264,16 @@ ol {
 
 .ilus,
 .design,
-.textil {
+.textil,
+.figs {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
 .ilus:hover,
 .design:hover,
-.textil:hover {
+.textil:hover,
+.figs:hover {
   opacity: 0.8;
 }
 
@@ -409,6 +411,7 @@ ol {
   opacity: 1;
   transition: opacity 0.5s ease;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .linkdg1:hover {
