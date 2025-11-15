@@ -445,10 +445,21 @@ ol {
 
 
 /*eventos*/
-.eventos_posts {
-  gap: 20px;
+
+.container_eventos {
+  display: grid;
   justify-content: center;
-  padding-top: 50px;
+  gap: 20px;
+  padding: 0 20px;
+  padding-top: 80px;
+}
+
+.contenedor1,
+.contenedor2,
+.contenedor3 {
+  width: 100%;
+  max-width: 600px;
+  padding-top: 30px;
 }
 
 /*links home en eventos*/
@@ -472,6 +483,18 @@ ol {
   opacity: 0.7;
 }
 
+video {
+    width: 100%; 
+    height: auto;
+}
+
+.col-md-5 {
+  justify-content: center;
+  padding-top: 20px;
+  max-width: 500px;
+  padding: 30px;
+  font-size: small;
+}
 
 /*Footer*/
 footer {
@@ -657,7 +680,7 @@ footer {
 
 /* Media query for medium screens */
 
-@media (min-width: 600px) and (max-width: 1400px) {
+@media (min-width: 600px) and (max-width: 1499px) {
 .bio_img {
   padding-top: 20px;
   height: auto;
@@ -665,8 +688,28 @@ footer {
 }
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+  padding-top: 250px;
+}
+
+.works_img{
+  padding-top: 250px;
+}
+
+.container_contacto{
+  padding-top: 250px;
+  gap: 2500px;
+}
+
 /* Media query for bigger screens */
-@media (min-width: 1300px) {
+@media (min-width: 1500px) {
   /*Bio*/
 
   .bio {
@@ -773,4 +816,12 @@ footer {
     gap: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+}
+
+.vacio{
+  padding-top: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
