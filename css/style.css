@@ -270,6 +270,13 @@ ol {
   transition: opacity 0.5s ease;
 }
 
+.behance_text {
+  text-align: center;
+  font-size: medium;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 .ilus:hover,
 .design:hover,
 .textil:hover,
@@ -572,8 +579,10 @@ footer {
 
   body {
     background-image: url("../img/bgcel.png");
-    background-size: cover;
+    width: 100%;
+    background-size: 100%;
   }
+
 
   /*Carrusel*/
 
@@ -602,7 +611,7 @@ footer {
 
   .bio {
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 130px;
     width: 100%;
     padding-right: 25px;
   }
@@ -627,10 +636,8 @@ footer {
 
   .works_img {
     display: grid;
-    gap: 20px;
     justify-content: center;
-    padding-top: 50px;
-    transform: scale(70%);
+    transform: scale(90%);
   }
 
   .lightbox {
