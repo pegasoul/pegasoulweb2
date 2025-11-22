@@ -55,22 +55,6 @@ a:hover {
 
 /*navbar*/
 
-
-/*.navbar {
-  position: fixed;
-  background-color: transparent;
-  background-image: url("../img/navimg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100px;
-  padding-bottom: 50px;
-  z-index: 9999;
-  opacity: 0.3;
-  transition: opacity 0.9s ease;
-
-}*/
-
 .navbar {
   position: fixed;
   background-color: whitesmoke;
@@ -81,50 +65,36 @@ a:hover {
   transition: opacity 0.9s ease;
 }
 
+.navbar-brand {
+  padding-left: 30px;
+}
+
+.navbar-nav {
+  padding-right: 30px;
+}
+
 .navbar:hover {
   opacity: 0.9;
 }
 
-.navbar-collapse {
-  justify-content: right;
-  padding-right: 10%;
-}
-
-.navbar-expand-lg {
-  padding-right: 10px;
+.collapse {
+  justify-content: left;
 }
 
 .nav-item {
-  padding-inline: 10%;
+  padding-left: 15px;
 }
 
-.navbar-brand {
-  padding-left: 5%;
+
+
+.collapse {
+  justify-content: left;
 }
 
-.navbar-toggler:focus,
-.navar-toggler:active {
-  outline: none;
-  box-shadow: none;
+.nav-item {
+  padding-left: 15px;
 }
 
-.navlink1,
-.navlink2,
-.navlink3,
-.navlink4,
-.navlink5 {
-  color: rgb(0, 0, 0);
-  font-weight: normal;
-  transition: font-weight 0.3s ease;
-}
-
-.navlink1:hover,
-.navlink2:hover,
-.navlink3:hover,
-.navlink4:hover,
-.navlink5:hover {
-  font-weight: bolder;
-}
 
 ul {
   display: flex;
@@ -139,76 +109,9 @@ ol {
   color: black;
 }
 
-/*nav_eventos*/
 
-.navbar2 {
-  background-color: whitesmoke;
-  width: 100%;
-}
 
-.navbar:hover {
-  opacity: 0.9;
-}
 
-.navbar-collapse {
-  justify-content: right;
-  padding-right: 10%;
-}
-
-.navbar-expand-lg {
-  padding-right: 10px;
-}
-
-.nav-item {
-  padding-inline: 10%;
-}
-
-.navbar-brand {
-  padding-left: 5%;
-}
-
-.navbar-toggler:focus,
-.navar-toggler:active {
-  outline: none;
-  box-shadow: none;
-}
-
-.navlink1,
-.navlink2,
-.navlink3,
-.navlink4,
-.navlink5 {
-  color: rgb(0, 0, 0);
-  font-weight: normal;
-  transition: font-weight 0.3s ease;
-}
-
-.navlink1:hover,
-.navlink2:hover,
-.navlink3:hover,
-.navlink4:hover,
-.navlink5:hover {
-  font-weight: bolder;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-  text-align: none;
-  font-size: small;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  color: black;
-}
-
-.event_titulo {
-  font-size: 90%;
-  padding-left: 20px;
-  padding-top: 2px;
-}
 
 /*Bio*/
 
@@ -589,12 +492,10 @@ footer {
 /* Media query for cellphones*/
 @media (max-width: 600px) {
   /*navbar*/
-  
-  .navbar-toggler-icon {
-    background-image: url("../img/toggler.png");
+
+  .navbar-brand {
+    padding-left: 15px;
   }
-
-
 
   body {
     background-image: url("../img/bgcel.png");
