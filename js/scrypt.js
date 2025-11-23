@@ -60,3 +60,4 @@ lightboxImg.addEventListener("click", function (event) {
 });
 
 // carousel responsive
+

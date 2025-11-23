@@ -53,8 +53,15 @@
           <a class="nav-link" href="../index.html#contact">Contacto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/events.html">Eventos</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Eventos
           </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/events.html#dibujantes">Jornadas de Dibujo</a></li>
+            <li><a class="dropdown-item" href="../pages/events.html#stickers">Feria de Stcikers</a></li>
+            <li><a class="dropdown-item" href="../pages/events.html#otros">Otros eventos</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://pegasoul.empretienda.com.ar" target="_blank">Tienda</a>
@@ -68,6 +75,8 @@
 
     <!--main-->
     <main>
+      <div id="scrollMessage" class="alert alert-info fixed-top text-center" role="alert">
+Piezas gráficas elaboradas para diversos proyectos, utilizando herramientas como Adobe Illustrator y Photoshop.<br><a href="https://behance.com/pegasoul" target="_blank"><u>Portfolio Completo</u></a></div>
       <!---grid-->
       <div class="grid-container">
         <div class="grid-item">
@@ -160,5 +169,15 @@
     <footer>©Pegasoul por Bel Rolón | 2024</footer>
 
     <script src="../js/scrypt.js"></script>
+        <script>
+window.addEventListener('scroll', function() {
+  const scrollMessage = document.getElementById('scrollMessage');
+  if (window.scrollY > 20) { 
+      scrollMessage.classList.add('hidden');
+    } else {
+      scrollMessage.classList.remove('hidden');
+    }
+});
+</script>
   </body>
 </html>
