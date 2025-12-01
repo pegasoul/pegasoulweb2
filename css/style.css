@@ -216,6 +216,7 @@ ol {
   padding-bottom: 20px;
 }
 
+
 .ilus:hover,
 .design:hover,
 .textil:hover,
@@ -351,6 +352,10 @@ ol {
 }
 .card-text {
   font-size: small;
+}
+
+.mas_pr {
+text-decoration:none;
 }
 
 .grid-item2 {
@@ -609,6 +614,13 @@ footer {
     transform: scale(90%);
   }
 
+  .mas_trabajos {
+  text-align: center;
+  text-decoration: underline;
+  font-size: medium;
+  padding-bottom: 250px;
+}
+
   .lightbox {
     padding-top: 100px;
   }
@@ -678,9 +690,20 @@ footer {
   padding-top: 250px;
 }
 
-.works_img{
-  padding-top: 250px;
+  .works_img {
+    padding-top: 250px;
+  }
+
+  .mas_trabajos {
+  text-align: center;
+  text-decoration: underline;
+  font-size: medium;
+  padding-top: 50px;
+  padding-bottom: 250px;
 }
+
+
+
 
 .container_contacto{
   padding-top: 250px;
@@ -729,8 +752,15 @@ footer {
     gap: 80px;
     justify-content: center;
     padding-top: 320px;
-    padding-bottom: 280px;
   }
+
+  .mas_trabajos {
+  text-align: center;
+  text-decoration: underline;
+  font-size: medium;
+  padding-top: 50px;
+  padding-bottom: 250px;
+}
 
   /*Events*/
 
