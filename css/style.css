@@ -354,8 +354,22 @@ ol {
   font-size: small;
 }
 
-.mas_pr {
-text-decoration:none;
+.card {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  align-items: center;
+}
+
+.card-body {
+  background-color: transparent;
+  padding: none;
+  border: none;
+  align-items: center;
+}
+
+.ol{
+  align-items: center;
 }
 
 .grid-item2 {
@@ -555,8 +569,6 @@ footer {
     background-size: 100%;
   }
 
-  .cont
-
 
   /*Carrusel*/
 
@@ -613,12 +625,18 @@ footer {
     justify-content: center;
     transform: scale(90%);
   }
-
+ 
   .mas_trabajos {
+    width: 100%;
   text-align: center;
   text-decoration: underline;
   font-size: medium;
   padding-bottom: 250px;
+ }
+
+.card-body {
+  display: list-item;
+  padding-right: 30px;
 }
 
   .lightbox {
@@ -702,6 +720,14 @@ footer {
   padding-bottom: 250px;
 }
 
+.mas_works {
+  display:list-item;
+  text-align: center;
+  text-decoration: none;
+  font-size: medium;
+  padding-top: 50px;
+  padding-bottom: 250px;
+}
 
 
 
